@@ -1,5 +1,5 @@
 class MovieSummarySerializer < ActiveModel::Serializer
-  attributes :summary
+  attributes :summary, :id
 
   def summary
     "#{self.object.title} - #{self.object.description[0..49]}..."
